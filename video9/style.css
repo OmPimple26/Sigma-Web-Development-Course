@@ -1,0 +1,17 @@
+.red{
+    color: red;
+    background-color: orange;
+}
+
+.red bg-yellow{
+    background-color: yellow;
+}
+
+#firstdiv{
+    /* background-color: red; */
+    background-color: aqua;
+}
+
+#seconddiv{
+    background-color: yellow;
+}
