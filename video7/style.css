@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+    padding: 1.5px;
+    display: flexbox;
+    transition: all;
+}
+
+h1{
+    color: purple;
+}
+
+label{
+    color: darkblue;
+}
