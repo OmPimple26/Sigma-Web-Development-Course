@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(33, 33, 34);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ header {
+    background-color: rgb(220, 136, 218);
+    position: sticky;
+    top: 0;
+}
+
+nav ul { 
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+ul li {
+    margin: 15px;
+    color: white;
+    font-weight: bolder;
+}
+
+.box {
+    border: 2px solid black;
+    margin: 7px;
+    height: 570px;
+    background-color: rgb(8, 184, 8);
+    display: flex;
+}
+
+.div1 {
+    border: 2px solid black;
+    margin: 50px;
+    background-color: pink;
+    width: 700px;
+    
+}
+
+.div2 {
+    background-color: rgb(146, 146, 238);
+}
+
+.logo {
+    margin: 11px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: auto;
+}
+
+img {
+    position: fixed;
+    bottom: 0;
+}
+
+.div3 {
+    border: 3px solid rgb(253, 251, 251);
+    height: 200px;
+    border-radius: 40px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(252, 250, 250);
+}
+
+footer {
+    background-color: rgb(235, 216, 216);
+    padding: 10px;
+    text-align: center;
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+}
