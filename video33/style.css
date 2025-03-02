@@ -1,0 +1,138 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    margin: 0px;
+    padding: 10px;
+    background-color: aqua;
+} */
+
+/* .navbar nav ul {
+    display: flex; */
+    /* padding: 25px; */
+    /* list-style: none;
+    margin: auto;
+} */
+
+/* .navbar nav ul li{
+    padding: 20px 20px 20px 400px; */
+    /* margin: 5px; */
+    /* color: blue;
+} */
+
+/* .navbar nav ul li:hover{
+    color:blueviolet;
+    cursor: pointer;
+}
+
+.content h1{
+    align-items: center;
+    justify-content: center;
+} */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: aqua;
+    padding: 10px 20px;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    padding: 10px 20px;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar nav ul li:hover {
+    color: blueviolet;
+}
+
+.content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+} */
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: darkorange;
+    --seccolor:yellow;
+    --another-color:white;
+    --decoration-color: rgba(243, 10, 10, 0.952);
+    --main-color:black;
+    --defpad:15px;
+    --defop:0.8;
+}
+
+body{
+    background-color: var(--seccolor);
+}
+
+.nav{
+    background-color: var(--color);
+}
+
+.nav li:hover{
+    background-color: var(--another-color);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    opacity: var(--defop);
+    list-style: none;
+    font-size: 25px;
+    margin: 10px;
+    padding: var(--defpad);
+    color: var(--main-color);
+}
+
+h1{
+    text-align: center;
+    color: var(--decoration-color);
+}
+
+.content{
+    text-align: center;
+    margin: 23px 300px;
+    padding: var(--defpad);
+    font-style:inherit;
+    font-size: 20px;
+    color: grey;
+    border: 5px solid var(--main-color);
+    height: auto;
+    width: 50vw;
+    background-color: var(--another-color);
+    border-radius: 25px;
+}
+
+.content p{
+    margin-top: 20px;
+}
