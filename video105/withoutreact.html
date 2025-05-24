@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without React Counter App</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            padding: 2px;
+            margin: 2px;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid greenyellow;
+            background-color: black;
+        }
+
+        #counter {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: hotpink;
+            color: black;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #btn {
+            background-color: aqua;
+            height: 60px;
+            width: 60px;
+            border: 2px solid black;
+            border-radius: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="counter">0</div>
+        <button id="btn">Click Me</button>
+    </div>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+            let num = parseInt(document.getElementById("counter").innerHTML)
+            document.getElementById("counter").innerHTML = num + 1;
+        })
+    </script>
+</body>
+
+</html>
