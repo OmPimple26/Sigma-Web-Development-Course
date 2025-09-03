@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Card</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 300px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .countdown {
+      font-size: 64px;
+      font-weight: bold;
+      color: #e91e63;
+      margin: 20px 0;
+    }
+
+    .timestamp {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Countdown</div>
+    <div id="countdown" class="countdown">10</div>
+    <div class="title">Timestamp</div>
+    <div id="timestamp" class="timestamp"></div>
+  </div>
+
+  <script>
+    let count = 10;
+    const countdownEl = document.getElementById("countdown");
+    const timestampEl = document.getElementById("timestamp");
+
+    // Update countdown
+    const countdownInterval = setInterval(() => {
+      if (count > 0) {
+        count--;
+        countdownEl.textContent = count;
+      } else {
+        clearInterval(countdownInterval);
+      }
+    }, 1000);
+
+    // Update timestamp
+    function updateTime() {
+      const now = new Date();
+      timestampEl.textContent = now.toLocaleTimeString();
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+</html>
