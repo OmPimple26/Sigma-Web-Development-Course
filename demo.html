@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <img src="hello.png" target="_blank" alt="XYZ Image" />
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+    <h1>Demo Website</h1>
+
+    <div class="container">
+        <div class="boxes">
+            <div class="box1">Box 1</div>
+            <div class="box2">Box 2</div>
+            <div class="box3">Box 3</div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>All rights reserved. <span>&copy; 2024</span> rights reserved</h3>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: wheat;
+    }
+
+    body:hover {
+        background-color: yellow;
+    }
+
+
+    h1 {
+        color: black;
+        text-align: center;
+        margin: 20px;
+        padding: 2px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: blueviolet;
+        position: sticky;
+    }
+
+    nav:hover {
+        background-color: rgb(2, 249, 126);
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-style: italic;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+    }
+
+    nav ul li {
+        color: white;
+        cursor: pointer;
+    }
+
+    nav ul li:hover {
+        text-decoration: underline;
+        color: brown;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .boxes {
+        display: flex;
+        gap: 20px;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .box1:hover {
+        background-color: red;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-size: xx-large;
+        color: black;
+    }
+
+    .box2:hover {
+        background-color: blue;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .box3:hover {
+        background-color: hotpink;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    footer {
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer:hover {
+        background-color: rgb(2, 249, 126);
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-style: italic;
+    }
+
+    footer h3:hover {
+        color: #000;
+    }
+
+    footer span {
+        color: yellow;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin: 10px 0 0 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+</style>
+
+</html>
